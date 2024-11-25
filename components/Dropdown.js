@@ -52,12 +52,6 @@ export function DropdownMenuCheckboxes() {
             </DropdownMenuCheckboxItem>
           </Link>
         </div>
-        <DropdownMenuSeparator />
-        <div className="flex justify-between">
-          <DropdownMenuLabel>
-            <ThemeChanger />
-          </DropdownMenuLabel>
-        </div>
       </DropdownMenuContent>
     </DropdownMenu>
   );
