@@ -5,9 +5,9 @@ import { DropdownMenuCheckboxes } from "./Dropdown";
 
 function Navbar() {
   return (
-    <div className="bg-background/50 backdrop-blur-sm w-full h-16 flex items-center justify-center md:px-14 border-b fixed p-4">
+    <div className="bg-background/50 backdrop-blur-[10px] w-full h-16 flex items-center justify-center md:px-14 border-b fixed p-4">
       <nav className="flex items-center justify-between w-full">
-        <p className="font-bold text-xl">CoderTrust</p>
+        <p className="font-bold text-xl font-mono">CoderTrust.</p>
         <div className="hidden md:flex">
           <ul className="flex gap-8 items-center">
             <li className="hover:underline text-primary">

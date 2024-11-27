@@ -10,9 +10,17 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
+  DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
 import { MenuIcon } from "lucide-react";
-import { ThemeChanger } from "./ThemeChanger";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDiscord,
+  faGithub,
+  faServicestack,
+} from "@fortawesome/free-brands-svg-icons";
+import { faHome, faPhone, faServer } from "@fortawesome/free-solid-svg-icons";
+import { faAddressCard, faFile } from "@fortawesome/free-regular-svg-icons";
 
 export function DropdownMenuCheckboxes() {
   const [showStatusBar, setShowStatusBar] = useState(true);
@@ -30,27 +38,48 @@ export function DropdownMenuCheckboxes() {
         <DropdownMenuLabel className="text-center">Menu</DropdownMenuLabel>
         <DropdownMenuSeparator />
         {/* Links Section */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col">
           <Link href="/" className="w-full">
-            <DropdownMenuCheckboxItem className="w-full text-center">
+            <DropdownMenuItem className="w-full flex justify-between items-center">
               Home
-            </DropdownMenuCheckboxItem>
+              <p>
+                <FontAwesomeIcon icon={faHome} className="text-sx" />
+              </p>
+            </DropdownMenuItem>
           </Link>
           <Link href="/about" className="w-full">
-            <DropdownMenuCheckboxItem className="w-full text-center">
+            <DropdownMenuItem className="w-full flex justify-between">
               About
-            </DropdownMenuCheckboxItem>
+              <p>
+                <FontAwesomeIcon icon={faAddressCard} className="text-sx" />
+              </p>
+            </DropdownMenuItem>
           </Link>
           <Link href="/contact" className="w-full">
-            <DropdownMenuCheckboxItem className="w-full text-center">
+            <DropdownMenuItem className="w-full flex justify-between">
               Contact
-            </DropdownMenuCheckboxItem>
+              <p>
+                <FontAwesomeIcon icon={faPhone} className="text-sx" />
+              </p>
+            </DropdownMenuItem>
           </Link>
           <Link href="/services" className="w-full">
-            <DropdownMenuCheckboxItem className="w-full text-center">
+            <DropdownMenuItem className="w-full flex justify-between">
               Services
-            </DropdownMenuCheckboxItem>
-          </Link>
+              <p>
+                <FontAwesomeIcon icon={faServer} className="text-sx" />
+              </p>
+            </DropdownMenuItem>
+          </Link>{" "}
+          <DropdownMenuSeparator className="w-full" />
+          <div className="flex flex-row justify-between px-2">
+            <Link href="https://github.com/CoderTrust">
+              <FontAwesomeIcon icon={faGithub} className="text-lg m-1" />
+            </Link>
+            <Link href="#">
+              <FontAwesomeIcon icon={faDiscord} className="text-lg m-1" />
+            </Link>
+          </div>
         </div>
       </DropdownMenuContent>
     </DropdownMenu>

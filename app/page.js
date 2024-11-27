@@ -1,4 +1,7 @@
+import Build from "@/components/Build";
+import IconShowcase from "@/components/frameworks";
 import { Button } from "@/components/ui/button";
+import FeaturesGrid from "@/components/WhyChooseus";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,9 +12,11 @@ export default function Home() {
         <div className="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8">
           <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
             A{" "}
-            <span className="font-semibold text-primary">free repository</span>{" "}
+            <span className="font-semibold text-primary font-mono">
+              free_repository
+            </span>{" "}
             for community <br className="hidden lg:block" /> components using{" "}
-            <span className="font-semibold underline decoration-primary text-primary">
+            <span className="font-semibold underline decoration-primary text-primary font-mono">
               CoderTrust
             </span>
           </h1>
@@ -41,6 +46,22 @@ export default function Home() {
             height={500}
           />
         </div>
+      </section>
+      <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center">
+        <div>
+          <h1 className="text-3xl font-bold underline font-mono md:text-4xl">
+            Why CoderTrust for your next project
+          </h1>
+          <div>
+            <FeaturesGrid />
+          </div>
+        </div>
+      </section>
+      <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center">
+        <IconShowcase />
+      </section>
+      <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center">
+        <Build />
       </section>
     </>
   );
