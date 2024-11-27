@@ -1,5 +1,8 @@
+"use client";
+
 import { ArrowUp } from "lucide-react";
 import React from "react";
+import { Button } from "./ui/button";
 
 function Footer() {
   return (
@@ -9,13 +12,14 @@ function Footer() {
         <a
           href="https://github.com/zoroxcode"
           target="_blank"
-          rel="noopener noreferrer"
           className="text-primary underline font-mono"
         >
           ZoroXCode
         </a>
       </p>
-      <ArrowUp />
+      <Button variant="outline" size="icon">
+        <ArrowUp />
+      </Button>
     </footer>
   );
 }

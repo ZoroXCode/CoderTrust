@@ -44,6 +44,7 @@ export default function Home() {
             className="w-full h-full max-w-md mx-auto"
             width={500}
             height={500}
+            priority
           />
         </div>
       </section>
