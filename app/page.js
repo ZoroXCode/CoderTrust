@@ -28,7 +28,7 @@ export default function Home() {
           <div className="flex justify-center lg:block">
             <div className="w-48 my-5 flex justify-between">
               <Button>
-                <Link href={"/contact"}>Let's Talk</Link>
+                <Link href={"/contact"}>Let&apos;s Talk</Link>
               </Button>
               <Button>
                 <Link href={"/about"}>About Us</Link>
