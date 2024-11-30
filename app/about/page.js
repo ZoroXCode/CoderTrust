@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import Animation from "@/components/animation";
+import Animation from "@/components/Animation";
 
 function Page() {
   return (

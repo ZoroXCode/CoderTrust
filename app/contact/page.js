@@ -23,7 +23,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"; // Import Alert components
-import Animation from "@/components/animation";
+import Animation from "@/components/Animation";
 
 export default function Contact() {
   const [formData, setFormData] = useState({

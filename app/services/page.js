@@ -1,4 +1,4 @@
-import Animation from "@/components/animation";
+import Animation from "@/components/Animation";
 import { Button } from "@/components/ui/button";
 import {
   faGithub,

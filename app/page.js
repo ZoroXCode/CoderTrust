@@ -1,3 +1,4 @@
+import Animation from "@/components/Animation";
 import Build from "@/components/Build";
 import IconShowcase from "@/components/frameworks";
 import TypeAnimation from "@/components/TypeAnimation";
@@ -5,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import FeaturesGrid from "@/components/WhyChooseus";
 import Image from "next/image";
 import Link from "next/link";
-import Animation from "@/components/animation";
 
 export default function Home() {
   return (
