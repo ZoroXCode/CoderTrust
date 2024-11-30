@@ -5,6 +5,7 @@
 html {
   scrollbar-width: none;
   -ms-overflow-style: none;
+  will-change: transform;
 }
 
 body {
