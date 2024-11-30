@@ -14,7 +14,7 @@ function Footer() {
 
   return (
     <footer className="h-14 border-t-2 flex items-center justify-between px-8">
-      <p className="text-primary text-sm">
+      <p className="text-sm">
         &copy; {new Date().getFullYear()} CoderTrust. All credits to{" "}
         <a
           href="https://github.com/zoroxcode"

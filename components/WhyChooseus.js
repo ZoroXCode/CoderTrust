@@ -53,7 +53,7 @@ const FeaturesGrid = () => {
     <div className="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
       {features.map((feature, index) => (
         <div key={index} className="flex gap-4 items-start">
-          <div className="rounded-full p-2 w-8 h-8 shrink-0 text-primary bg-gray-200 dark:bg-gray-800">
+          <div className="flex rounded-full p-2 w-8 h-8 shrink-0  bg-gray-200 dark:bg-gray-800 text-primary-background text-center items-center justify-center">
             <FontAwesomeIcon icon={feature.icon} className="" />
           </div>
           <div>
